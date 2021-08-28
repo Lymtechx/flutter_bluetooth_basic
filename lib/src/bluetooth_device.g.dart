@@ -8,12 +8,11 @@ part of 'bluetooth_device.dart';
 
 BluetoothDevice _$BluetoothDeviceFromJson(Map<String, dynamic> json) {
   return BluetoothDevice(
-    name: json['name'] as String,
+    name: json['name'] as String? ?? 'Unknown',
     address: json['address'] as String,
   )
-    ..type = json['type'] as int
-    ..connected =
-        (json['connected'] != null) ? (json['connected'] as bool) : false;
+    ..type = json['type'] as int? ?? 0
+    ..connected = json['connected'] as bool? ?? false;
 }
 
 Map<String, dynamic> _$BluetoothDeviceToJson(BluetoothDevice instance) =>
