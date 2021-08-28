@@ -1,5 +1,11 @@
 # flutter_bluetooth_basic
 
+## Why this Fork
+
+This library has been forked from [flutter_bluetooth_basic](https://github.com/andrey-ushakov/flutter_bluetooth_basic) to support null safety.
+
+----
+
 Flutter plugin that allows to find bluetooth devices & send raw bytes data.
 Supports both Android and iOS.
 
